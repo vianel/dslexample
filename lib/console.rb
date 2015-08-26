@@ -16,7 +16,7 @@ class Console
   
   def method_missing(name, *args)
     if name.to_s.include?('add_')
-      self.send(name.to_s.split('add_')[1]+"=", args)
+      self.send("#{name.to_s.split("add_")[1]}=", args)
     else
       raise NameError, 'No Exists method ' + name.to_s 
     end
