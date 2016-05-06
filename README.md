@@ -2,4 +2,4 @@
 
 Example of how write a simple DSL on ruby
 
-##Thanks
+##Thank you
